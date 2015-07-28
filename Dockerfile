@@ -5,4 +5,5 @@ MAINTAINER kukuqiu5 <qm2009@gmail.com>
 RUN yum -y update; yum clean all
 RUN yum -y install openssh-server; yum clean all
 EXPOSE 22
+
 ENTRYPOINT ["/usr/sbin/sshd", "-D"]
